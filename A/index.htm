@@ -6,13 +6,13 @@
         <title>MONKEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</title>
     </head>
     <body>
-        <video id="vd1" width="853" height="480" loop controls autoplay muted onplay="toggleMute()">
+        <video id="vd1" width="853" height="480" loop controls autoplay muted onplay="unmute()">
             <source src="./media/monki.mp4" type="video/mp4">
         </video>
         <script>
-            var video = document.getElementById("vd1");
-            function toggleMute(){
-                video.muted = !video.muted
+            var vid = document.getElementById("vd1");
+            function unmute() {
+                vid.muted = false;
             }
         </script>
         <br>
